@@ -7,37 +7,20 @@
     <title>Document</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    div {
-  width: 280px;
-  height: 10px;
-  background-color:aliceblue;
-  animation-name: example;
-  animation-duration: 20s;
-  border-radius: 15px;
-}
-div {
-  width: 280px;
-  height: 10px;
-  background-color: aliceblue;
-  animation-name: example;
-  animation-duration: 10s;
-  border-radius: 15px;
-}
-@keyframes example {
-  from {background-color: pink;}
-  to {background-color:#620dc9  ;}
-}
-@keyframes example {
-  from {background-color: orange;}
-  to {background-color:hsl(277, 84%, 45%)  ;}
-}
+    
   </style>
 </head>
   <body>
     <header>
     <h1>Graffiti Addict</h1>
-    <button><em>Contact</em></button>
-
+    
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">My Interests</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">Biography</a>
+        <a href="#Feedback">Feedback</a>
+      </div>
     
    
 </header>
@@ -52,7 +35,7 @@ div {
     </a>
    </section>
     <section>
-   <h1>Contact</h1>
+   <h2>Contact</h2>
     <button>Number: 015157804567</button> 
     <button>@: jannis.ehrichsen@gmail.com</button>
 </section>
@@ -81,12 +64,26 @@ div {
 </figure>
 </section>
 
+<h2>Feedback</h2>
 
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name Last Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Your Email</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+ 
+  
+      <label for="subject">Suggestions for Improvement</label>
+      <textarea id="subject" name="suggestions for improvement" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+</div>
 
-    
-
-<a href="https://github.com/settings/profile">designed by Jannes Erichen 2022 Hamburg</a>
-<div></div>
-<img src="https://media0.giphy.com/media/3ov9jS6BHMJh8THID6/giphy.gif"
 </body>
 </html>
